@@ -225,7 +225,7 @@ class _GamePageState extends State<GamePage> {
       ),
       child: Center(
         child: Text(
-          'Player turn: ' + _controller.currentPlayerTurn(),
+          'Turno do Jogador: ' + _controller.currentPlayerTurn(),
           style: TextStyle(
             color: Theme.of(context).primaryColor,
             fontSize: 15,
@@ -237,7 +237,7 @@ class _GamePageState extends State<GamePage> {
 
   _shareGame(BuildContext context) async {
     await Share.share(
-      'Check out this game ! - https://github.com/lgmbx/tic-tac-toe',
+      'Joga meu jogo ai ! - https://github.com/lhcamargo/tic-tac-toe-floor',
     );
   }
 }
